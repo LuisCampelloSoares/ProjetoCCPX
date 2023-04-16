@@ -110,3 +110,26 @@ ul{
     color: #514988;
     
 }
+input{
+    background-color: #514988;
+    border-radius: 10px;
+    color: #ffffff;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 15px;
+
+    border-style: none;
+}
+#footer{
+    background-color: #F3C61F;
+}
+.card-highlight{
+    box-shadow: 10px 10px 10px 10px grey;
+    transition: all ease 0.5s;
+}
+.card-selected{
+    border: solid 1px green;
+}

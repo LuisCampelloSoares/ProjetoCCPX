@@ -33,7 +33,7 @@
                 </ul>
                 <p class="CDText">PARA A MAIOR CCXP DE TODOS OS TEMPOS</p>
             </div>
-            <video controls autoplay loop class="temaVideo">
+            <video muted autoplay loop class="temaVideo">
                 <source src="Arlequina.mp4" type="video/mp4">
             </video>
         </div>
@@ -42,15 +42,23 @@
         <div class="rodapeTexto">
             <p class="rodapeTitulo">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
             <div>
-                <a href=""> <img class="rodapeImg" src="rodape1.svg" alt=""></a>
-                <a href=""> <img class="rodapeImg" src="rodape2.svg" alt=""></a>
-                <a href=""> <img class="rodapeImg" src="rodape3.svg" alt=""></a>
-                <a href=""> <img class="rodapeImg" src="rodape4.svg" alt=""></a>
+                <img class="rodapeImg" onclick="cardSelect('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" src="rodape1.svg" id="quinta">
+                <img class="rodapeImg" onclick="cardSelect('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" src="rodape2.svg" id="sexta">
+                <img class="rodapeImg" onclick="cardSelect('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" src="rodape3.svg" id="sabado">
+                <img class="rodapeImg" onclick="cardSelect('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" src="rodape4.svg" id="domingo">
             </div>
         </div>
-        <button class="botao"><strong>GARANTA O SEU</strong></button>
+        <button onclick="showSelectedCard()" class="botao"><strong>GARANTA O SEU</strong></button>
     </footer>
-    <div id="midia">@L_FSoares</div>
+    
+    <div id="footer">
+        <form>
+            <input type="email" placeholder="Seu email" required>
+            <input type="submit">
+        </form>
+        <div id="midia">@L_FSoares</div>
+    </div>
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
